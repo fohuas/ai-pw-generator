@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={inter.className}>
-      <body className="antialiased">
+    <html lang="zh-CN" className={`${inter.className} tongyi-design-pc`} suppressHydrationWarning>
+      <body className="antialiased" data-inject-video-svd="true" suppressHydrationWarning>
         {children}
       </body>
     </html>
